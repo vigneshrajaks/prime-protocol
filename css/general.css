@@ -1,0 +1,128 @@
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #fff;
+  line-height: 1;
+  background-color: #091238;
+
+  overflow-x: hidden;
+}
+
+/* ****************** */
+/* GENERAL REUSABLE COMPONENTS */
+/* ****************** */
+
+.container {
+  max-width: 120rem;
+  padding-inline: 3.2rem;
+  margin-inline: auto;
+}
+
+.grid {
+  display: grid;
+  column-gap: 2.4rem;
+}
+
+.grid--2--cols {
+  grid-template-columns: 1fr 1fr;
+}
+
+.heading-primary {
+  font-size: 9.6rem;
+  font-weight: 800;
+}
+
+.heading-secondary {
+  font-size: 4.8rem;
+  font-weight: 700;
+}
+
+.align-text-center {
+  text-align: center;
+}
+
+.mg-bm-sm {
+  margin-bottom: 1.2rem;
+}
+
+.border-wrap {
+  width: fit-content;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(0, 195, 255, 0.5),
+    rgba(0, 94, 255, 0.5)
+  );
+  padding: 1px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+img {
+  max-width: 100%;
+}
+
+.active {
+  color: #00c4ff !important;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
